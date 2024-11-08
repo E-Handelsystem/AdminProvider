@@ -67,7 +67,7 @@ public ProductService_Tests()
             .Returns(ResponseFactory<Product>.Failed(null!));
 
         //Act
-
+        // Ny kommentar
         var result = _productService.Create(productRequest);
 
         //Assert
