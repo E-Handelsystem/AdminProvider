@@ -115,7 +115,7 @@ public class ProductService_Tests
         // Anropa ProductService.Update med den nya requesten
         var updateResult = _productService.Update(createResult.Data.Id, updateRequest);
 
-        // Kontrollera att Update var framgångsrikt
+        // Kontrollera att Update var framgångsrikt.
         Assert.NotNull(updateResult);
         Assert.NotNull(updateResult.Data);
         Assert.True(updateResult.Success);
