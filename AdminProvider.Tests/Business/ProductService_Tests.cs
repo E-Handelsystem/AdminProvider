@@ -58,7 +58,7 @@ public ProductService_Tests()
         var productRequest = new ProductRequest
         {
             Name = null!,
-            Description = "Ett par sköna byxor",
+            Description = "Ett par snygga byxor",
             Price = "199"
         };
 
