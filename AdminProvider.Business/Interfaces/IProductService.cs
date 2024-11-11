@@ -9,9 +9,9 @@ public interface IProductService
     public ResponseResult<IEnumerable<Product>> GetAll();
     public ResponseResult<Product> GetOne(string Id);
 
-    public ResponseResult<Product> UpdateOne(string Id);
+    public ResponseResult<Product> Update(string Id, ProductRequest productRequest);
 
-    public ResponseResult DeleteOne(string Id);
+    public ResponseResult<Product> Delete(string Id);
 
 
 }
