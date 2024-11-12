@@ -7,5 +7,8 @@ namespace AdminProvider.Data.Interfaces
         ResponseResult<T> Create(T entity);
         ResponseResult<IEnumerable<T>> GetAll();
         ResponseResult<T> GetOne(Func<T, bool> predicate);
+
+        ResponseResult<T> Update(T entity);
+        ResponseResult<T> Delete(T entity);
     }
 }
