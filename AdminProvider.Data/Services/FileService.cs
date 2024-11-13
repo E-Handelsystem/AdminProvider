@@ -1,11 +1,14 @@
 ﻿using AdminProvider.Data.Interfaces;
 
 namespace AdminProvider.Data.Services;
-//Överväg ta bort Fileservice.
+
+//FileService är förberett för användning då behov kommer uppstå på sikt.
+//Användningsområdet är dels för att ta ut filer ur systemet - t.ex. produkt- eller kundlista.
+//Sedan när vi interagerar med andra system kommer detta behövas för att kommunicera med system som inte har ett API och då behöver skicka filer istället.
 public class FileService : IFileService
 {
    
-    //Byt ut här till Responseresult
+    
     public string GetContentFromFile(string filePath)
     {
         try

@@ -14,9 +14,6 @@ public class ProductService : IProductService
     {
         _productRepository = productRepository;
     }
-
-
-
     public ResponseResult<Product> Create(ProductRequest productRequest)
     {
         var product = ProductFactory.Create(productRequest);

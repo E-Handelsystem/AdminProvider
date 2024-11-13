@@ -2,7 +2,10 @@
 namespace AdminProvider.Domain.Models;
 
 
-public class ResponseResult<T> : ResponseResult //Får i och med T möjlighet att välja en type(någon typ av data) när jag ska använda ResponseResult. Väljer att göra på detta vis för att kunna använda ResponseResult i flera områden i programmet. Kan välja att sätta en type eller inte.
+public class ResponseResult<T> : ResponseResult 
+    //Får i och med T möjlighet att välja en type(någon typ av data) när ResponseResult ska användas.
+    //Väljer att göra på detta vis för att kunna använda ResponseResult i flera områden i programmet.
+    //Kan välja att sätta en type eller inte i och med denna.
 {
     public T? Data { get; set; }
 }
